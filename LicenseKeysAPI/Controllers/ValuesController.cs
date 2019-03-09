@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LicenceKeysAPI.Controllers
+namespace LicenseKeysAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
