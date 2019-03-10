@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseKeysAPI", "LicenceKeysAPI\LicenseKeysAPI.csproj", "{57ED8652-9918-434F-A826-F7AB1E8649F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseKeysAPI", "LicenseKeysAPI\LicenseKeysAPI.csproj", "{57ED8652-9918-434F-A826-F7AB1E8649F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Licenses", "Licenses\Licenses.csproj", "{3E1E68FD-01EE-4ED7-B923-91D724CB6AD5}"
 EndProject

@@ -12,9 +12,22 @@ namespace LicenseKeysAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Licenses.License>> Get()
         {
-            return new string[] { "value1", "value2" };
+            Licenses.License l1 = new Licenses.License(
+                new Guid(),
+                "Customer",
+                DateTime.UtcNow,
+                DateTime.UtcNow.AddYears(1)
+            );
+
+            Licenses.License l2 = new Licenses.License(
+                new Guid(),
+                "Customer Very Long  Description Customer Very Long  Description Customer Very Long  Description Customer Very Long  Description ",
+                DateTime.UtcNow,
+                DateTime.UtcNow.AddYears(1)
+            );
+            return new Licenses.License[] { l1, l2 };
         }
 
         // GET api/values/5
