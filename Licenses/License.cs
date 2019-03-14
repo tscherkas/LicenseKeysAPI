@@ -22,5 +22,10 @@ namespace Licenses
             CreationDate = creationDate;
             ExpirationDate = expirationDate;
         }
+
+        public void Validate()
+        {
+            Validator.ValidateObject(this, new ValidationContext(this), true);
+        }
     }
 }
