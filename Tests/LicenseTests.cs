@@ -17,5 +17,26 @@ namespace Tests
             Assert.Throws<ValidationException>(
                 () => licence.Validate());
         }
+
+        [Fact]
+        public void LicenseExpirationDate()
+        {
+            var licence = new License(new Guid(),
+                "Expired licence",
+                DateTime.Now,
+                DateTime.Parse("1900-01-01"));
+            Assert.Throws<ValidationException>(
+                () => licence.Validate());
+        }
+        [Fact]
+        public void LicenseRequiredFields()
+        {
+            var licence = new License(new Guid(),
+                String.Empty,
+                DateTime.Now,
+                DateTime.Parse("1900-01-01"));
+            Assert.Throws<ValidationException>(
+                () => licence.Validate());
+        }
     }
 }
